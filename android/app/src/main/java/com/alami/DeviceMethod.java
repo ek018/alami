@@ -12,7 +12,7 @@ import com.facebook.react.bridge.ReactMethod;
 
 public class DeviceMethod extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
-    ReactOneCustomMethod(ReactApplicationContext context) {
+    DeviceMethod(ReactApplicationContext context) {
        super(context);
         reactContext = context;
     }
