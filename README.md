@@ -22,3 +22,7 @@
 - Install Android Studio
 - Connect your device or run simulator
 - npx react-native run-android
+
+## Preview
+https://user-images.githubusercontent.com/24914859/190378845-78646244-b373-4253-98d4-7d7924fff739.mp4
+
