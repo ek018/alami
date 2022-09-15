@@ -12,7 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3A509D4E28D2AF50005B415E /* RCTNativeModules.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A509D4D28D2AF4F005B415E /* RCTNativeModules.m */; };
+		3A509D4E28D2AF50005B415E /* RCTDeviceMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A509D4D28D2AF4F005B415E /* RCTDeviceMethod.m */; };
 		7699B88040F8A987B510C191 /* libPods-alami-alamiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-alami-alamiTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,8 +38,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = alami/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = alami/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-alami-alamiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-alami-alamiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A509D4C28D2AE76005B415E /* RCTNativeModules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNativeModules.h; sourceTree = "<group>"; };
-		3A509D4D28D2AF4F005B415E /* RCTNativeModules.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNativeModules.m; sourceTree = "<group>"; };
+		3A509D4C28D2AE76005B415E /* RCTDeviceMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDeviceMethod.h; sourceTree = "<group>"; };
+		3A509D4D28D2AF4F005B415E /* RCTDeviceMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDeviceMethod.m; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-alami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alami.debug.xcconfig"; path = "Target Support Files/Pods-alami/Pods-alami.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-alami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alami.release.xcconfig"; path = "Target Support Files/Pods-alami/Pods-alami.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-alami-alamiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alami-alamiTests.debug.xcconfig"; path = "Target Support Files/Pods-alami-alamiTests/Pods-alami-alamiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				3A509D4C28D2AE76005B415E /* RCTNativeModules.h */,
-				3A509D4D28D2AF4F005B415E /* RCTNativeModules.m */,
+				3A509D4C28D2AE76005B415E /* RCTDeviceMethod.h */,
+				3A509D4D28D2AF4F005B415E /* RCTDeviceMethod.m */,
 			);
 			name = alami;
 			sourceTree = "<group>";
@@ -418,7 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				3A509D4E28D2AF50005B415E /* RCTNativeModules.m in Sources */,
+				3A509D4E28D2AF50005B415E /* RCTDeviceMethod.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33J655PGT9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = alami/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33J655PGT9;
 				INFOPLIST_FILE = alami/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

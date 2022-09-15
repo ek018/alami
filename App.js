@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -16,6 +16,7 @@ import {
   Text,
   useColorScheme,
   View,
+  NativeModules
 } from 'react-native';
 
 import {
@@ -56,10 +57,20 @@ const Section = ({children, title}): Node => {
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
-
+  const { DeviceMethod } = NativeModules
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  useEffect(() => {
+    DeviceMethod.getPhoneID()
+    .then((res) => {
+      console.log(`res device id ${res}`)
+    })
+    .catch((err) => {
+      console.log(`err : ${err}`)
+    })
+  },[])
 
   return (
     <SafeAreaView style={backgroundStyle}>
