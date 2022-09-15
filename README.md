@@ -1,5 +1,9 @@
 # alami
 
+## Pre-Requisites
+- Node JS (^14.15.0)
+- yarn (^1.22.11)
+
 ## Installation steps
 - $ git clone https://github.com/ek018/alami.git
 - cd alami
